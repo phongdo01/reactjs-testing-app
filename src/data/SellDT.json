@@ -1,0 +1,38 @@
+[
+    {
+        "symbol": "CTF",
+        "orderqtty": 5,
+        "orderamt": 6000,
+        "txdate": "2019-07-13"
+    },
+    {
+        "symbol": "CTF",
+        "orderqtty": 5,
+        "orderamt": 6000,
+        "txdate": "2019-07-15"
+    },
+    {
+        "symbol": "CTF",
+        "orderqtty": 5,
+        "orderamt": 7000,
+        "txdate": "2019-07-16"
+    },
+    {
+        "symbol": "CTF",
+        "orderqtty": 16,
+        "orderamt": 8000,
+        "txdate": "2019-07-17"
+    },
+    {
+        "symbol": "COM",
+        "orderqtty": 16,
+        "orderamt": 8000,
+        "txdate": "2019-07-17"
+    },
+    {
+        "symbol": "COM",
+        "orderqtty": 16,
+        "orderamt": 8000,
+        "txdate": "2019-07-17"
+    }
+]
