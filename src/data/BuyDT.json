@@ -1,20 +1,20 @@
 [
     {
         "symbol": "CTF",
-        "orderqtty": 10,
-        "orderamt": 5000,
-        "txdate": "2019-07-15"
+        "orderamt": 4200,
+        "orderqtty": 100,
+        "txdate": "2019-07-10"
     },
     {
         "symbol": "CTF",
-        "orderqtty": 5,
-        "orderamt": 7000,
-        "txdate": "2019-07-16"
+        "orderqtty": 16,
+        "orderamt": 8000,
+        "txdate": "2019-07-11"
     },
     {
         "symbol": "CTF",
-        "orderqtty": 15,
-        "orderamt": 5000,
-        "txdate": "2019-07-17"
+        "orderamt": 9000,
+        "orderqtty": 16,
+        "txdate": "2019-07-11"
     }
 ]
