@@ -18,8 +18,11 @@ class Boo extends Component {
             count: 333
         });
     }
+    fn = async () => {
+        return {foo: 'foo'}
+    }
     render() {
-        console.log('count: ', this.state.count)
+        console.log('version: ', React.version)
         return (
             <div>
                 <button className='btn btn-primary' onClick={this.click}>Cccc</button>
