@@ -36,13 +36,14 @@ const StatelessComponent = () => {
     return (
         <div>
             <Form addTodo={addTodo} />
-            <div>
+            {console.log(todos)}
+            {/* <div>
                 {todos.map((todo, index) => (
                         <div key={index} onClick={() => deleteTodo(index)}>
                             <span>{todo}</span>
                         </div>
                 ))}
-            </div>
+            </div> */}
         </div>
     )
 }
