@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import BuyDT from '../data/BuyDT'
-import SellDT from '../data/SellDT'
-import { throwStatement } from '@babel/types';
-import { async } from 'q';
-import Boo from './Boo';
+// import Boo from './Boo';
 import LearnHook from './LearnHook'
 class MainCmn extends Component {
     constructor(props) {
@@ -24,9 +20,9 @@ class MainCmn extends Component {
 
         return (
             <div>
-                <Boo cal={this.clickCal.bind(this)} />
-                <div className="btn btn-success" onClick={() => this.clickCal()}>Caculating</div>
-
+                {/* <Boo cal={this.clickCal.bind(this)} /> */}
+                {/* <div className="btn btn-success" onClick={() => this.clickCal()}>Caculating</div> */}
+                <div className='mt-1'></div>
                 <LearnHook/>
             </div>
         );

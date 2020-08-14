@@ -19,10 +19,8 @@ class Boo extends Component {
         });
     }
     fn = async () => {
-        return {foo: 'foo'}
     }
     render() {
-        console.log('version: ', React.version)
         return (
             <div>
                 <button className='btn btn-primary' onClick={this.click}>Cccc</button>
