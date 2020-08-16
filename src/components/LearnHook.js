@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios'
 const ShowAction = (props, key, del) => {
   const k = key
   return (
@@ -13,12 +14,12 @@ const ShowAction = (props, key, del) => {
     </div>
   )
 }
+let val = ''
 const StatelessComponent = () => {
-  let val
   const [_action, setAction] = useState('')
   const [listAction, setListAction] = useState([])
   const getOnChange = (e) => {
-    val = e.target.value
+    setAction(e.target.value)
   }
   const setClick = () => {
     setAction(val)
@@ -26,9 +27,8 @@ const StatelessComponent = () => {
     //   return
     // }
     const oldAction = [...listAction]
-    oldAction.push(val)
+    oldAction.push(_action)
     setListAction(oldAction)
-    val = '1'
     setAction('')
   }
   const del = (id) => {
@@ -36,14 +36,19 @@ const StatelessComponent = () => {
     newList.splice(id, 1)
     setListAction(newList)
   };
-  console.log('listAction: ', listAction)
+  useEffect(()=>{
+    console.log('ahihi')
+    return function() {
+      console.log('liu tiu')
+    }
+  })
   return (
     <div>
       <div className='col-sm-6'>
         <form className=''>
           <div className='row form-group'>
             <label className='col-sm-3'>Todos</label>
-            <input className='form-control col-sm-6' name='action' onChange={getOnChange.bind(this)} value={val} />
+            <input className='form-control col-sm-6' name='action' onChange={getOnChange.bind(this)} value={_action} />
             <div className='col-sm-1'></div>
             <input type='button' className='btn btn-success col-sm-2' value='Add' onClick={setClick.bind(this)} />
           </div>
